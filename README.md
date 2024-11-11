@@ -20,11 +20,12 @@ bash ./segment_timing.sh <baseurl> <representation> <end_number> <output_folder>
 - baseurl: url to use as base for downloading segments, segment and url pattern assumed based on unified streaming dash output for number timeline mode.
 - representation: the bitrate of the track to test, taken from mpd file.
 - end_number: can be taken or calculate from the MPD or shortened to short circuit. (if you only want to test the first 10 segments, you can pass in 10 and processing will stop after 10 are downloaded and analyzed)
+- output folder
 
 ## example output
 
 ```
-$ glow ./HDFD4000010088779353-2021-1.11-2/summary.md
+$ glow ./output_folder/summary.md
 
    Segment Timing Summary
 
